@@ -1,0 +1,21 @@
+{
+  "generator-jhipster": {
+    "additionalSubGenerators": "createtodoapp",
+    "baseName": "azure-spring-apps",
+    "cli": true,
+    "generators": {
+      "createtodoapp": {
+        "command": true,
+        "priorities": ["prompting", "writing"],
+        "sbs": null,
+        "written": true
+      }
+    },
+    "jhipsterVersion": "7.9.3",
+    "localBlueprint": false,
+    "prettierDefaultIndent": 2,
+    "projectName": "Azure Spring Apps Application",
+    "skipCommitHook": true,
+    "subGenerators": []
+  }
+}
