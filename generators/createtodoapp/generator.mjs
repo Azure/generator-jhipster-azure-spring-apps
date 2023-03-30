@@ -146,4 +146,20 @@ export default class extends BaseGenerator {
     };
   }
 
+  get [END_PRIORITY]() {
+    return {
+      afterRunHook() {
+          this.log(`
+${chalk.greenBright('The TODO template has been created successfully! 🎉')}
+
+${chalk.magentaBright(`Run locally:`)}
+${chalk.cyan(`    mvn clean package -DskipTests`)}
+${chalk.cyan(`    java -jar web\\target\\azure-spring-apps-todo-web-0.0.1-SNAPSHOT.jar`)}
+
+${chalk.magentaBright(`Deploy on Azure Spring Apps with monthly free grants:`)}
+${chalk.cyan(`    https://review.learn.microsoft.com/en-us/azure/spring-apps/quickstart-for-web-app?branch=pr-en-us-227725`)}
+                  `);
+      },
+    };
+  }
 }
