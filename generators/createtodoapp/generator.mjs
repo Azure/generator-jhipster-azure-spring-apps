@@ -33,18 +33,6 @@ export default class extends BaseGenerator {
             name: "packageName",
             message: "What is your default java package name?",
             default: "com.mycompany.myapp"
-          },
-          {
-            type: "confirm",
-            name: "prodDatabase",
-            message: "Do you need a production database?",
-            default: true
-          },
-          {
-            type: "confirm",
-            name: "devDatabase",
-            message: "Do you need a development database?",
-            default: true
           }
         ];
 
