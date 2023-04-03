@@ -13,7 +13,9 @@ describe('SubGenerator createtodoapp of azure-spring-apps JHipster blueprint', (
         .create(SUB_GENERATOR_NAMESPACE)
         .withOptions({
           reproducible: true,
-          defaults: true,
+          blueprint: 'azure-spring-apps',
+          appDir: false,
+          baseName: 'jhipster',
         })
         .withLookups(lookups)
         .run();
