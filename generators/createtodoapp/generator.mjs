@@ -4,6 +4,7 @@ import {
   PRIORITY_PREFIX,
   PROMPTING_PRIORITY,
   WRITING_PRIORITY,
+  END_PRIORITY,
 } from 'generator-jhipster/esm/priorities';
 
 export default class extends BaseGenerator {
