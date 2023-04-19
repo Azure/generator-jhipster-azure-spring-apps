@@ -13,7 +13,7 @@ export default class extends BaseGenerator {
         const prompts = [
           {
             type: 'input',
-            name: 'applicationName',
+            name: 'baseName',
             message: 'What is your application name?',
             default: 'azure-spring-apps-todo',
           },
@@ -33,6 +33,9 @@ export default class extends BaseGenerator {
 
         const props = await this.prompt(prompts, this.config);
 
+        // Load derived properties from props
+        this.loadDerivedAppConfig(props);
+
         this.todoAppProps = props;
       },
     };
@@ -43,7 +46,7 @@ export default class extends BaseGenerator {
       async writingTemplateTask() {
         this.fs.copy(this.templatePath('client/'), this.destinationPath('client/'));
 
-        const packageName = this.todoAppProps.packageName.replaceAll('.', '/');
+        const packageFolder = this.todoAppProps.packageFolder;
 
         await this.writeFiles({
           sections: {
@@ -73,43 +76,43 @@ export default class extends BaseGenerator {
                   { file: 'web/pom.xml' },
                   {
                     file: 'web/configuration/RFC3339DateFormat.java',
-                    renameTo: ctx => `web/src/main/java/${packageName}/configuration/RFC3339DateFormat.java`,
+                    renameTo: ctx => `web/src/main/java/${packageFolder}/configuration/RFC3339DateFormat.java`,
                   },
                   {
                     file: 'web/configuration/WebConfiguration.java',
-                    renameTo: ctx => `web/src/main/java/${packageName}/configuration/WebConfiguration.java`,
+                    renameTo: ctx => `web/src/main/java/${packageFolder}/configuration/WebConfiguration.java`,
                   },
                   {
                     file: 'web/model/TodoItem.java',
-                    renameTo: ctx => `web/src/main/java/${packageName}/model/TodoItem.java`,
+                    renameTo: ctx => `web/src/main/java/${packageFolder}/model/TodoItem.java`,
                   },
                   {
                     file: 'web/model/TodoList.java',
-                    renameTo: ctx => `web/src/main/java/${packageName}/model/TodoList.java`,
+                    renameTo: ctx => `web/src/main/java/${packageFolder}/model/TodoList.java`,
                   },
                   {
                     file: 'web/model/TodoState.java',
-                    renameTo: ctx => `web/src/main/java/${packageName}/model/TodoState.java`,
+                    renameTo: ctx => `web/src/main/java/${packageFolder}/model/TodoState.java`,
                   },
                   {
                     file: 'web/repository/TodoItemRepository.java',
-                    renameTo: ctx => `web/src/main/java/${packageName}/repository/TodoItemRepository.java`,
+                    renameTo: ctx => `web/src/main/java/${packageFolder}/repository/TodoItemRepository.java`,
                   },
                   {
                     file: 'web/repository/TodoListRepository.java',
-                    renameTo: ctx => `web/src/main/java/${packageName}/repository/TodoListRepository.java`,
+                    renameTo: ctx => `web/src/main/java/${packageFolder}/repository/TodoListRepository.java`,
                   },
                   {
                     file: 'web/web/HomeController.java',
-                    renameTo: ctx => `web/src/main/java/${packageName}/web/HomeController.java`,
+                    renameTo: ctx => `web/src/main/java/${packageFolder}/web/HomeController.java`,
                   },
                   {
                     file: 'web/web/TodoListsController.java',
-                    renameTo: ctx => `web/src/main/java/${packageName}/web/TodoListsController.java`,
+                    renameTo: ctx => `web/src/main/java/${packageFolder}/web/TodoListsController.java`,
                   },
                   {
                     file: 'web/SimpleTodoApplication.java',
-                    renameTo: ctx => `web/src/main/java/${packageName}/SimpleTodoApplication.java`,
+                    renameTo: ctx => `web/src/main/java/${packageFolder}/SimpleTodoApplication.java`,
                   },
                   {
                     file: 'web/application.yml',

@@ -4,18 +4,18 @@
 
   <parent>
     <groupId><%= packageName %></groupId>
-    <artifactId><%= applicationName %>-parent</artifactId>
+    <artifactId><%= dasherizedBaseName %>-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
 
-  <artifactId><%= applicationName %>-web</artifactId>
+  <artifactId><%= dasherizedBaseName %>-web</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name><%= applicationName %> Web</name>
+  <name><%= humanizedBaseName %> Web</name>
 
   <dependencies>
     <dependency>
       <groupId><%= packageName %></groupId>
-      <artifactId><%= applicationName %>-client</artifactId>
+      <artifactId><%= dasherizedBaseName %>-client</artifactId>
       <version>${project.version}</version>
       <scope>runtime</scope>
     </dependency>
