@@ -33,8 +33,17 @@ export default class extends BaseGenerator {
 
         const props = await this.prompt(prompts, this.config);
 
-        // Load derived properties from props
+        // Make sure all derived properties are loaded
+        this.loadAppConfig(props);
         this.loadDerivedAppConfig(props);
+        this.loadServerConfig(props);
+        this.loadDerivedServerConfig(props);
+        this.loadClientConfig(props);
+        this.loadDerivedClientConfig(props);
+        this.loadPlatformConfig(props);
+        this.loadTranslationConfig(props);
+
+        console.log({ props })
 
         this.todoAppProps = props;
       },
