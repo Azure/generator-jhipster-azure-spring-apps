@@ -8,7 +8,7 @@
     "jhipster-blueprint",
     "jhipster-7"
   ],
-  "license": "UNLICENSED",
+  "license": "MIT",
   "type": "module",
   "imports": {
     "#test-utils": "./test/utils.mjs"
