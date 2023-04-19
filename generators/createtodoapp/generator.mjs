@@ -43,8 +43,6 @@ export default class extends BaseGenerator {
         this.loadPlatformConfig(props);
         this.loadTranslationConfig(props);
 
-        console.log({ props })
-
         this.todoAppProps = props;
       },
     };
