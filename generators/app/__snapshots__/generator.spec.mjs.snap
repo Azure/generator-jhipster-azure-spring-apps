@@ -275,5 +275,17 @@ exports[`SubGenerator app of azure-spring-apps JHipster blueprint run should suc
   "web/src/main/resources/application.yml": {
     "stateCleared": "modified",
   },
+  "webpack/environment.js": Object {
+    "stateCleared": "modified",
+  },
+  "webpack/logo-jhipster.png": Object {
+    "stateCleared": "modified",
+  },
+  "webpack/proxy.conf.js": Object {
+    "stateCleared": "modified",
+  },
+  "webpack/webpack.custom.js": Object {
+    "stateCleared": "modified",
+  },
 }
 `;
