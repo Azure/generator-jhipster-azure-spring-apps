@@ -13,6 +13,7 @@ Jhipster Azure Spring Apps can quickly create applications that can be deployed 
 Documentation about Azure Spring Apps is available [here](https://learn.microsoft.com/en-us/azure/spring-apps/overview)
 
 ---
+
 ## 🚀 How to get started
 
 1. Install the package with `npm i generator-jhipster-azure-spring-apps`
