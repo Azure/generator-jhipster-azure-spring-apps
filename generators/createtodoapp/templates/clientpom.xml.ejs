@@ -4,13 +4,13 @@
 
     <parent>
         <groupId><%= packageName %></groupId>
-        <artifactId><%= applicationName %>-parent</artifactId>
+        <artifactId><%= dasherizedBaseName %>-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId><%= applicationName %>-client</artifactId>
+    <artifactId><%= dasherizedBaseName %>-client</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name><%= applicationName %> Client</name>
+    <name><%= humanizedBaseName %> Client</name>
 
     <build>
         <plugins>
