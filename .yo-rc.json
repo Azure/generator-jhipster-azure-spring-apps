@@ -4,10 +4,16 @@
     "baseName": "azure-spring-apps",
     "cli": true,
     "generators": {
+      "app": {
+        "command": false,
+        "priorities": ["composing"],
+        "sbs": true,
+        "written": true
+      },
       "createtodoapp": {
         "command": true,
-        "priorities": ["prompting", "writing"],
-        "sbs": null,
+        "priorities": ["prompting", "writing", "end"],
+        "sbs": false,
         "written": true
       }
     },
@@ -16,6 +22,6 @@
     "prettierDefaultIndent": 2,
     "projectName": "Azure Spring Apps Application",
     "skipCommitHook": true,
-    "subGenerators": []
+    "subGenerators": ["app"]
   }
 }
