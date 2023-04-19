@@ -31,7 +31,7 @@ export default class extends BaseGenerator {
           },
         ];
 
-        const props = await this.prompt(prompts, this.blueprintStorage);
+        const props = await this.prompt(prompts, this.config);
 
         this.todoAppProps = props;
       },
