@@ -29,6 +29,12 @@ export default class extends BaseGenerator {
             message: 'What is your default java package name?',
             default: 'com.mycompany.myapp',
           },
+          {
+            type: 'list',
+            name: 'prodDatabaseType',
+            message: 'Which database would you like to use?',
+            choices: ['postgresql']
+          }
         ];
 
         const props = await this.prompt(prompts, this.config);
@@ -151,7 +157,7 @@ ${chalk.cyan(`    mvn clean package -DskipTests`)}
 ${chalk.cyan(`    java -jar web\\target\\azure-spring-apps-todo-web-0.0.1-SNAPSHOT.jar`)}
 
 ${chalk.magentaBright(`Deploy on Azure Spring Apps with monthly free grants:`)}
-${chalk.cyan(`    https://review.learn.microsoft.com/en-us/azure/spring-apps/quickstart-for-web-app?branch=pr-en-us-227725`)}
+${chalk.cyan(`    https://aka.ms/asa/webapp-quickstart`)}
                   `);
       },
     };
