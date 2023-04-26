@@ -23,6 +23,9 @@ Object {
   "client/nginx/nginx.conf": Object {
     "stateCleared": "modified",
   },
+  "client/package-lock.json": Object {
+    "stateCleared": "modified",
+  },
   "client/package.json": Object {
     "stateCleared": "modified",
   },
