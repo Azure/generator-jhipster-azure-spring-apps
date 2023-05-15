@@ -1,0 +1,21 @@
+name: Build with Maven
+
+on:
+  workflow_dispatch:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          java-version: 17
+          distribution: 'adopt'
+          cache: maven
+      - name: Build with Maven - Java ${{ matrix.java-version }}
+        run: mvn -f pom.xml --batch-mode --update-snapshots verify
