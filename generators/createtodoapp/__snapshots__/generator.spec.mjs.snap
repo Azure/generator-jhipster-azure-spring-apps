@@ -2,6 +2,30 @@
 
 exports[`SubGenerator createtodoapp of azure-spring-apps JHipster blueprint run should succeed 1`] = `
 Object {
+  ".devcontainer/Dockerfile": Object {
+    "stateCleared": "modified",
+  },
+  ".devcontainer/devcontainer.json": Object {
+    "stateCleared": "modified",
+  },
+  ".gitattributes": Object {
+    "stateCleared": "modified",
+  },
+  ".github/CODE_OF_CONDUCT.md": Object {
+    "stateCleared": "modified",
+  },
+  ".github/ISSUE_TEMPLATE.md": Object {
+    "stateCleared": "modified",
+  },
+  ".github/PULL_REQUEST_TEMPLATE.md": Object {
+    "stateCleared": "modified",
+  },
+  ".github/workflows/build-with-maven.yml": Object {
+    "stateCleared": "modified",
+  },
+  ".gitignore": Object {
+    "stateCleared": "modified",
+  },
   ".mvn/wrapper/maven-wrapper.jar": Object {
     "stateCleared": "modified",
   },
@@ -11,7 +35,31 @@ Object {
   ".yo-rc.json": Object {
     "stateCleared": "modified",
   },
+  "CHANGELOG.md": Object {
+    "stateCleared": "modified",
+  },
+  "CONTRIBUTING.md": Object {
+    "stateCleared": "modified",
+  },
+  "LICENSE": Object {
+    "stateCleared": "modified",
+  },
+  "LICENSE.md": Object {
+    "stateCleared": "modified",
+  },
+  "NOTICE.txt": Object {
+    "stateCleared": "modified",
+  },
+  "README.md": Object {
+    "stateCleared": "modified",
+  },
+  "assets/web.png": Object {
+    "stateCleared": "modified",
+  },
   "client/Dockerfile": Object {
+    "stateCleared": "modified",
+  },
+  "client/README.md": Object {
     "stateCleared": "modified",
   },
   "client/entrypoint.js": Object {
@@ -168,6 +216,9 @@ Object {
     "stateCleared": "modified",
   },
   "pom.xml": Object {
+    "stateCleared": "modified",
+  },
+  "web/README.md": Object {
     "stateCleared": "modified",
   },
   "web/pom.xml": Object {
