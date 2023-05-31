@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/alpha/azure.yaml.json
+
+name: asa-samples-web-application
+metadata:
+  template: asa-samples-web-application@0.0.1-beta
+services:
+  simple-todo-web:
+    project: ./web
+    host: springapp
+    language: java
+    spring:
+      deploymentName: default
+    hooks:
+      prepackage:
+        windows:
+          shell: pwsh
+          run: cd ..;./mvnw.cmd clean install -N;cd client;../mvnw.cmd clean install
+        posix:
+          shell: sh
+          run: cd ..;./mvnw clean install -N;cd client;../mvnw clean install
