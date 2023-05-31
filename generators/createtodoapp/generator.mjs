@@ -58,6 +58,7 @@ export default class extends BaseGenerator {
     return {
       async writingTemplateTask() {
         this.fs.copy(this.templatePath('client/'), this.destinationPath('client/'));
+        this.fs.copy(this.templatePath('infra/'), this.destinationPath('infra/'));
 
         const packageFolder = this.todoAppProps.packageFolder;
 
@@ -68,6 +69,7 @@ export default class extends BaseGenerator {
                 templates: [
                   { file: 'mvnw', noEjs: true },
                   { file: 'mvnw.cmd', noEjs: true },
+                  { file: 'azure.yaml', noEjs: true },
                   { file: '.gitattributes', noEjs: true },
                   { file: '.gitignore', noEjs: true },
                   { file: 'CHANGELOG.md', noEjs: true },
