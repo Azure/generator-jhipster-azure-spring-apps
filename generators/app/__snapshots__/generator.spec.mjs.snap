@@ -56,6 +56,9 @@ Object {
   "assets/web.png": Object {
     "stateCleared": "modified",
   },
+  "azure.yaml": Object {
+    "stateCleared": "modified",
+  },
   "client/Dockerfile": Object {
     "stateCleared": "modified",
   },
@@ -207,6 +210,21 @@ Object {
     "stateCleared": "modified",
   },
   "client/tsconfig.json": Object {
+    "stateCleared": "modified",
+  },
+  "infra/abbreviations.json": Object {
+    "stateCleared": "modified",
+  },
+  "infra/main.bicep": Object {
+    "stateCleared": "modified",
+  },
+  "infra/main.parameters.json": Object {
+    "stateCleared": "modified",
+  },
+  "infra/modules/postgresql/flexibleserver.bicep": Object {
+    "stateCleared": "modified",
+  },
+  "infra/modules/springapps/springapps.bicep": Object {
     "stateCleared": "modified",
   },
   "mvnw": Object {
