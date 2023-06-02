@@ -6,6 +6,7 @@ param relativePath string
 param databaseUsername string
 @secure()
 param databasePassword string
+param datasourceUrl string
 
 resource asaInstance 'Microsoft.AppPlatform/Spring@2022-12-01' = {
   name: asaInstanceName
@@ -37,9 +38,10 @@ resource asaDeployment 'Microsoft.AppPlatform/Spring/apps/deployments@2022-12-01
         memory: '2Gi'
       }
       environmentVariables: {
-		DATABASE_USERNAME: databaseUsername
-		DATABASE_PASSWORD: databasePassword
-	  }
+        SPRING_DATASOURCE_URL: datasourceUrl
+		    SPRING_DATASOURCE_USERNAME: databaseUsername
+		    SPRING_DATASOURCE_PASSWORD: databasePassword
+	    }
     }
     source: {
       type: 'Jar'

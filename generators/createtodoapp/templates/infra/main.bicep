@@ -26,6 +26,7 @@ var asaInstanceName = '${abbrs.springApps}${resourceToken}'
 var appName = 'simple-todo-web'
 var psqlServerName = '${abbrs.postgresServer}${resourceToken}'
 var databaseName = 'Todo'
+var datasourceJdbcUrl= 'jdbc:postgresql://${psqlServerName}.postgres.database.azure.com:5432/${databaseName}'
 var psqlAdminName = 'psqladmin'
 var psqlUserName = 'psqluser'
 var tags = {
@@ -61,11 +62,12 @@ module springApps 'modules/springapps/springapps.bicep' = {
   scope: resourceGroup(rg.name)
   params: {
     location: location
-	appName: appName
-	tags: union(tags, { 'azd-service-name': appName })
-	asaInstanceName: asaInstanceName
-	relativePath: relativePath
-	databaseUsername: psqlUserName
-	databasePassword: psqlUserPassword
+    appName: appName
+    tags: union(tags, { 'azd-service-name': appName })
+    asaInstanceName: asaInstanceName
+    relativePath: relativePath
+    databaseUsername: psqlUserName
+    databasePassword: psqlUserPassword
+    datasourceUrl: datasourceJdbcUrl
   }
 }
