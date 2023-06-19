@@ -35,21 +35,26 @@ Go to [Jhipster Online](https://start.jhipster.tech/generate-azure-application) 
 </br> `azd auth login`
 1. Enable Azure Spring Apps feature for AZD
 </br> `azd config set alpha.springapp on`
-1. Prepare environment
-</br> Navigate to the generated project directory and run
+1. Navigate to the generated project directory and run
 </br>`azd up`
-1. Package
-</br> `azd package`
-1. Deploy
-</br> `azd deploy`
 
-1. Clean up resources
-</br> Run the following command to delete all the Azure resources used in this sample application
- </br>`azd down`
+  After the command is executed, you can see the following log signs that the deployment was successful.
 
-## ❤️ Learn more
+  ```text
+  [INFO] Deployment(default) is successfully updated.
+  [INFO] Deployment Status: Running
+  [INFO] Getting public url of app(simple-todo-web)...
+  [INFO] Application url: https://<your-azure-spring-apps-name>-simple-todo-web.azuremicroservices.io
+  ```
+
+  The output **Application url** is the endpoint to access the todo application.
+
+ ## ❤️ Next Steps
 - [Try Azure for free](https://azure.microsoft.com/en-us/products/spring-apps/#overview), you can start with $200 Azure credit.
 
 - To help you get started, Azure Spring Apps have [monthly FREE grants](https://techcommunity.microsoft.com/t5/apps-on-azure-blog/price-reduction-azure-spring-apps-does-more-costs-less/ba-p/3614058) on all plans – 50 vCPU Hours and 100 memory GB Hours per plan.
 
 - To learn more about this project, check [here](https://learn.microsoft.com/azure/spring-apps/quickstart-deploy-web-app?pivots=sc-standard).
+
+- At this point, you have a complete application deployed on Azure, to delete all the Azure resources created with this template:
+ </br>[`azd down`](https://learn.microsoft.com/azure/developer/azure-developer-cli/reference#azd-down)

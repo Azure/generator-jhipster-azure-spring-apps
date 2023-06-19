@@ -22,13 +22,19 @@ The following prerequisites are required to use this application. Please ensure 
 </br> `azd auth login`
 1. Enable Azure Spring Apps feature for AZD
 </br> `azd config set alpha.springapp on`
-1. Prepare environment
-</br> Navigate to the generated project directory and run
+1. Navigate to the generated project directory and run
 </br>`azd up`
-1. Package
-</br> `azd package`
-1. Deploy
-</br> `azd deploy`
+
+  After the command is executed, you can see the following log signs that the deployment was successful.
+
+  ```text
+  [INFO] Deployment(default) is successfully updated.
+  [INFO] Deployment Status: Running
+  [INFO] Getting public url of app(simple-todo-web)...
+  [INFO] Application url: https://<your-azure-spring-apps-name>-simple-todo-web.azuremicroservices.io
+```
+
+The output **Application url** is the endpoint to access the todo application.
 
 ### Application Architecture
 
