@@ -27,7 +27,7 @@ Go to [Jhipster Online](https://start.jhipster.tech/generate-azure-application) 
 1. Install AZD, you can try one of the following options:
  - **Windows package manager(winget)**: `winget install microsoft.azd`
  - **Chocolatey**: `choco install azd`
- - **Scrip**t: `powershell -ex AllSigned -c "Invoke-RestMethod 'https://aka.ms/install-azd.ps1' | Invoke-Expression"`
+ - **Script**: `powershell -ex AllSigned -c "Invoke-RestMethod 'https://aka.ms/install-azd.ps1' | Invoke-Expression"`
 1. Prepare environment
 </br>Log in Azure with OAuth2:
 </br> `azd auth login`
