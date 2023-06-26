@@ -33,7 +33,7 @@
     "update-snapshot": "npm run mocha -- --no-parallel --updateSnapshot"
   },
   "dependencies": {
-    "chalk": "4.1.2",
+    "chalk": "5.2.0",
     "generator-jhipster": "7.9.3",
     "generator-jhipster-azure-spring-apps": "^1.0.1"
   },
