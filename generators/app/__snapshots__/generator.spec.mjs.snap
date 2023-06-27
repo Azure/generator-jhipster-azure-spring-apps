@@ -1,278 +1,278 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SubGenerator app of azure-spring-apps JHipster blueprint run should succeed 1`] = `
-Object {
-  ".devcontainer/Dockerfile": Object {
+{
+  ".devcontainer/Dockerfile": {
     "stateCleared": "modified",
   },
-  ".devcontainer/devcontainer.json": Object {
+  ".devcontainer/devcontainer.json": {
     "stateCleared": "modified",
   },
-  ".gitattributes": Object {
+  ".gitattributes": {
     "stateCleared": "modified",
   },
-  ".github/CODE_OF_CONDUCT.md": Object {
+  ".github/CODE_OF_CONDUCT.md": {
     "stateCleared": "modified",
   },
-  ".github/ISSUE_TEMPLATE.md": Object {
+  ".github/ISSUE_TEMPLATE.md": {
     "stateCleared": "modified",
   },
-  ".github/PULL_REQUEST_TEMPLATE.md": Object {
+  ".github/PULL_REQUEST_TEMPLATE.md": {
     "stateCleared": "modified",
   },
-  ".github/workflows/build-with-maven.yml": Object {
+  ".github/workflows/build-with-maven.yml": {
     "stateCleared": "modified",
   },
-  ".gitignore": Object {
+  ".gitignore": {
     "stateCleared": "modified",
   },
-  ".mvn/wrapper/maven-wrapper.jar": Object {
+  ".mvn/wrapper/maven-wrapper.jar": {
     "stateCleared": "modified",
   },
-  ".mvn/wrapper/maven-wrapper.properties": Object {
+  ".mvn/wrapper/maven-wrapper.properties": {
     "stateCleared": "modified",
   },
-  ".yo-rc.json": Object {
+  ".yo-rc.json": {
     "stateCleared": "modified",
   },
-  "CHANGELOG.md": Object {
+  "CHANGELOG.md": {
     "stateCleared": "modified",
   },
-  "CONTRIBUTING.md": Object {
+  "CONTRIBUTING.md": {
     "stateCleared": "modified",
   },
-  "LICENSE": Object {
+  "LICENSE": {
     "stateCleared": "modified",
   },
-  "LICENSE.md": Object {
+  "LICENSE.md": {
     "stateCleared": "modified",
   },
-  "NOTICE.txt": Object {
+  "NOTICE.txt": {
     "stateCleared": "modified",
   },
-  "README.md": Object {
+  "README.md": {
     "stateCleared": "modified",
   },
-  "assets/web.png": Object {
+  "assets/web.png": {
     "stateCleared": "modified",
   },
-  "azure.yaml": Object {
+  "azure.yaml": {
     "stateCleared": "modified",
   },
-  "client/Dockerfile": Object {
+  "client/Dockerfile": {
     "stateCleared": "modified",
   },
-  "client/README.md": Object {
+  "client/README.md": {
     "stateCleared": "modified",
   },
-  "client/entrypoint.js": Object {
+  "client/entrypoint.js": {
     "stateCleared": "modified",
   },
-  "client/entrypoint.sh": Object {
+  "client/entrypoint.sh": {
     "stateCleared": "modified",
   },
-  "client/nginx/nginx.conf": Object {
+  "client/nginx/nginx.conf": {
     "stateCleared": "modified",
   },
-  "client/package-lock.json": Object {
+  "client/package-lock.json": {
     "stateCleared": "modified",
   },
-  "client/package.json": Object {
+  "client/package.json": {
     "stateCleared": "modified",
   },
-  "client/pom.xml": Object {
+  "client/pom.xml": {
     "stateCleared": "modified",
   },
-  "client/public/favicon.ico": Object {
+  "client/public/favicon.ico": {
     "stateCleared": "modified",
   },
-  "client/public/index.html": Object {
+  "client/public/index.html": {
     "stateCleared": "modified",
   },
-  "client/public/manifest.json": Object {
+  "client/public/manifest.json": {
     "stateCleared": "modified",
   },
-  "client/public/web.config": Object {
+  "client/public/web.config": {
     "stateCleared": "modified",
   },
-  "client/src/@types/window.d.ts": Object {
+  "client/src/@types/window.d.ts": {
     "stateCleared": "modified",
   },
-  "client/src/App.css": Object {
+  "client/src/App.css": {
     "stateCleared": "modified",
   },
-  "client/src/App.test.tsx": Object {
+  "client/src/App.test.tsx": {
     "stateCleared": "modified",
   },
-  "client/src/App.tsx": Object {
+  "client/src/App.tsx": {
     "stateCleared": "modified",
   },
-  "client/src/actions/actionCreators.ts": Object {
+  "client/src/actions/actionCreators.ts": {
     "stateCleared": "modified",
   },
-  "client/src/actions/common.ts": Object {
+  "client/src/actions/common.ts": {
     "stateCleared": "modified",
   },
-  "client/src/actions/itemActions.ts": Object {
+  "client/src/actions/itemActions.ts": {
     "stateCleared": "modified",
   },
-  "client/src/actions/listActions.ts": Object {
+  "client/src/actions/listActions.ts": {
     "stateCleared": "modified",
   },
-  "client/src/components/telemetry.tsx": Object {
+  "client/src/components/telemetry.tsx": {
     "stateCleared": "modified",
   },
-  "client/src/components/telemetryContext.ts": Object {
+  "client/src/components/telemetryContext.ts": {
     "stateCleared": "modified",
   },
-  "client/src/components/todoContext.ts": Object {
+  "client/src/components/todoContext.ts": {
     "stateCleared": "modified",
   },
-  "client/src/components/todoItemDetailPane.tsx": Object {
+  "client/src/components/todoItemDetailPane.tsx": {
     "stateCleared": "modified",
   },
-  "client/src/components/todoItemListPane.tsx": Object {
+  "client/src/components/todoItemListPane.tsx": {
     "stateCleared": "modified",
   },
-  "client/src/components/todoListMenu.tsx": Object {
+  "client/src/components/todoListMenu.tsx": {
     "stateCleared": "modified",
   },
-  "client/src/config/index.ts": Object {
+  "client/src/config/index.ts": {
     "stateCleared": "modified",
   },
-  "client/src/index.css": Object {
+  "client/src/index.css": {
     "stateCleared": "modified",
   },
-  "client/src/index.tsx": Object {
+  "client/src/index.tsx": {
     "stateCleared": "modified",
   },
-  "client/src/layout/header.tsx": Object {
+  "client/src/layout/header.tsx": {
     "stateCleared": "modified",
   },
-  "client/src/layout/layout.tsx": Object {
+  "client/src/layout/layout.tsx": {
     "stateCleared": "modified",
   },
-  "client/src/layout/sidebar.tsx": Object {
+  "client/src/layout/sidebar.tsx": {
     "stateCleared": "modified",
   },
-  "client/src/models/applicationState.ts": Object {
+  "client/src/models/applicationState.ts": {
     "stateCleared": "modified",
   },
-  "client/src/models/index.ts": Object {
+  "client/src/models/index.ts": {
     "stateCleared": "modified",
   },
-  "client/src/models/todoItem.ts": Object {
+  "client/src/models/todoItem.ts": {
     "stateCleared": "modified",
   },
-  "client/src/models/todoList.ts": Object {
+  "client/src/models/todoList.ts": {
     "stateCleared": "modified",
   },
-  "client/src/pages/homePage.tsx": Object {
+  "client/src/pages/homePage.tsx": {
     "stateCleared": "modified",
   },
-  "client/src/react-app-env.d.ts": Object {
+  "client/src/react-app-env.d.ts": {
     "stateCleared": "modified",
   },
-  "client/src/reducers/index.ts": Object {
+  "client/src/reducers/index.ts": {
     "stateCleared": "modified",
   },
-  "client/src/reducers/listsReducer.ts": Object {
+  "client/src/reducers/listsReducer.ts": {
     "stateCleared": "modified",
   },
-  "client/src/reducers/selectedItemReducer.ts": Object {
+  "client/src/reducers/selectedItemReducer.ts": {
     "stateCleared": "modified",
   },
-  "client/src/reducers/selectedListReducer.ts": Object {
+  "client/src/reducers/selectedListReducer.ts": {
     "stateCleared": "modified",
   },
-  "client/src/reportWebVitals.ts": Object {
+  "client/src/reportWebVitals.ts": {
     "stateCleared": "modified",
   },
-  "client/src/services/itemService.ts": Object {
+  "client/src/services/itemService.ts": {
     "stateCleared": "modified",
   },
-  "client/src/services/listService.ts": Object {
+  "client/src/services/listService.ts": {
     "stateCleared": "modified",
   },
-  "client/src/services/restService.ts": Object {
+  "client/src/services/restService.ts": {
     "stateCleared": "modified",
   },
-  "client/src/services/telemetryService.ts": Object {
+  "client/src/services/telemetryService.ts": {
     "stateCleared": "modified",
   },
-  "client/src/setupTests.ts": Object {
+  "client/src/setupTests.ts": {
     "stateCleared": "modified",
   },
-  "client/src/ux/styles.ts": Object {
+  "client/src/ux/styles.ts": {
     "stateCleared": "modified",
   },
-  "client/src/ux/theme.ts": Object {
+  "client/src/ux/theme.ts": {
     "stateCleared": "modified",
   },
-  "client/tsconfig.json": Object {
+  "client/tsconfig.json": {
     "stateCleared": "modified",
   },
-  "infra/abbreviations.json": Object {
+  "infra/abbreviations.json": {
     "stateCleared": "modified",
   },
-  "infra/main.bicep": Object {
+  "infra/main.bicep": {
     "stateCleared": "modified",
   },
-  "infra/main.parameters.json": Object {
+  "infra/main.parameters.json": {
     "stateCleared": "modified",
   },
-  "infra/modules/postgresql/flexibleserver.bicep": Object {
+  "infra/modules/postgresql/flexibleserver.bicep": {
     "stateCleared": "modified",
   },
-  "infra/modules/springapps/springapps.bicep": Object {
+  "infra/modules/springapps/springapps.bicep": {
     "stateCleared": "modified",
   },
-  "mvnw": Object {
+  "mvnw": {
     "stateCleared": "modified",
   },
-  "mvnw.cmd": Object {
+  "mvnw.cmd": {
     "stateCleared": "modified",
   },
-  "pom.xml": Object {
+  "pom.xml": {
     "stateCleared": "modified",
   },
-  "web/README.md": Object {
+  "web/README.md": {
     "stateCleared": "modified",
   },
-  "web/pom.xml": Object {
+  "web/pom.xml": {
     "stateCleared": "modified",
   },
-  "web/src/main/java/com/mycompany/myapp/SimpleTodoApplication.java": Object {
+  "web/src/main/java/com/mycompany/myapp/SimpleTodoApplication.java": {
     "stateCleared": "modified",
   },
-  "web/src/main/java/com/mycompany/myapp/configuration/RFC3339DateFormat.java": Object {
+  "web/src/main/java/com/mycompany/myapp/configuration/RFC3339DateFormat.java": {
     "stateCleared": "modified",
   },
-  "web/src/main/java/com/mycompany/myapp/configuration/WebConfiguration.java": Object {
+  "web/src/main/java/com/mycompany/myapp/configuration/WebConfiguration.java": {
     "stateCleared": "modified",
   },
-  "web/src/main/java/com/mycompany/myapp/model/TodoItem.java": Object {
+  "web/src/main/java/com/mycompany/myapp/model/TodoItem.java": {
     "stateCleared": "modified",
   },
-  "web/src/main/java/com/mycompany/myapp/model/TodoList.java": Object {
+  "web/src/main/java/com/mycompany/myapp/model/TodoList.java": {
     "stateCleared": "modified",
   },
-  "web/src/main/java/com/mycompany/myapp/model/TodoState.java": Object {
+  "web/src/main/java/com/mycompany/myapp/model/TodoState.java": {
     "stateCleared": "modified",
   },
-  "web/src/main/java/com/mycompany/myapp/repository/TodoItemRepository.java": Object {
+  "web/src/main/java/com/mycompany/myapp/repository/TodoItemRepository.java": {
     "stateCleared": "modified",
   },
-  "web/src/main/java/com/mycompany/myapp/repository/TodoListRepository.java": Object {
+  "web/src/main/java/com/mycompany/myapp/repository/TodoListRepository.java": {
     "stateCleared": "modified",
   },
-  "web/src/main/java/com/mycompany/myapp/web/HomeController.java": Object {
+  "web/src/main/java/com/mycompany/myapp/web/HomeController.java": {
     "stateCleared": "modified",
   },
-  "web/src/main/java/com/mycompany/myapp/web/TodoListsController.java": Object {
+  "web/src/main/java/com/mycompany/myapp/web/TodoListsController.java": {
     "stateCleared": "modified",
   },
-  "web/src/main/resources/application.yml": Object {
+  "web/src/main/resources/application.yml": {
     "stateCleared": "modified",
   },
 }

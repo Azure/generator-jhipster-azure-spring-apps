@@ -1,4 +1,4 @@
-import { expect } from 'expect';
+import { expect } from 'esmocha';
 
 import { helpers, lookups } from '#test-utils';
 
@@ -15,7 +15,8 @@ describe('SubGenerator createtodoapp of azure-spring-apps JHipster blueprint', (
           reproducible: true,
           blueprint: 'azure-spring-apps',
           appDir: false,
-          baseName: 'jhipster',
+          // baseName: 'jhipster-azure-spring-apps',
+          ignoreNeedlesError: true,
         })
         .withLookups(lookups)
         .run();
