@@ -1,14 +1,14 @@
 import chalk from 'chalk';
-import BaseGenerator from 'generator-jhipster/esm/generators/base';
-import { PRIORITY_PREFIX, PROMPTING_PRIORITY, WRITING_PRIORITY, END_PRIORITY } from 'generator-jhipster/esm/priorities';
+import BaseGenerator from 'generator-jhipster/generators/base';
 
 export default class extends BaseGenerator {
   constructor(args, opts, features) {
-    super(args, opts, { taskPrefix: PRIORITY_PREFIX, ...features });
+    super(args, opts, features);
   }
 
-  get [PROMPTING_PRIORITY]() {
+  get [BaseGenerator.PROMPTING]() {
     return {
+      ...super.prompting,
       async promptingTemplateTask() {
         const prompts = [
           {
@@ -33,8 +33,9 @@ export default class extends BaseGenerator {
             type: 'list',
             name: 'prodDatabaseType',
             message: 'Which database would you like to use?',
-            choices: ['postgresql']
-          }
+            choices: ['postgresql'],
+            default: 'postgresql',
+          },
         ];
 
         const props = await this.prompt(prompts, this.config);
@@ -47,15 +48,16 @@ export default class extends BaseGenerator {
         this.loadClientConfig(props);
         this.loadDerivedClientConfig(props);
         this.loadPlatformConfig(props);
-        this.loadTranslationConfig(props);
+        // this.loadTranslationConfig(props);
 
         this.todoAppProps = props;
       },
     };
   }
 
-  get [WRITING_PRIORITY]() {
+  get [BaseGenerator.WRITING]() {
     return {
+      ...super.writing,
       async writingTemplateTask() {
         this.fs.copy(this.templatePath('client/'), this.destinationPath('client/'));
         this.fs.copy(this.templatePath('infra/'), this.destinationPath('infra/'));
@@ -71,7 +73,7 @@ export default class extends BaseGenerator {
                   { file: 'mvnw.cmd', noEjs: true },
                   { file: 'azure.yaml', noEjs: true },
                   { file: '.gitattributes', noEjs: true },
-                  { file: '.gitignore', noEjs: true },
+                  { file: '.gitignore', noEjs: false },
                   { file: 'CHANGELOG.md', noEjs: true },
                   { file: 'CONTRIBUTING.md', noEjs: true },
                   { file: 'LICENSE', noEjs: true },
@@ -164,8 +166,9 @@ export default class extends BaseGenerator {
     };
   }
 
-  get [END_PRIORITY]() {
+  get [BaseGenerator.END]() {
     return {
+      ...super.end,
       afterRunHook() {
         this.log(`
 ${chalk.greenBright('The TODO template has been created successfully! 🎉')}
