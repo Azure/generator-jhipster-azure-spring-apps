@@ -36,8 +36,9 @@ Go to [Jhipster Online](https://start.jhipster.tech/generate-azure-application) 
 
 ## 🎉 How to deploy on Azure
 
-1. Log in to azd. Only required once per-install.
+1. Log in to [azd](https://learn.microsoft.com/azure/developer/azure-developer-cli/install-azd). Only required once per-install.
    </br> `azd auth login`
+  * If you are on Windows, install [powershell](https://learn.microsoft.com/powershell/scripting/install/installing-powershell-on-windows)
 1. Enable Azure Spring Apps feature for AZD
    </br> `azd config set alpha.springapp on`
 1. Navigate to the generated project directory and run
