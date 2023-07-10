@@ -2,6 +2,8 @@
     <a href="https://start.jhipster.tech/generate-azure-application">
         <img width="380" height="160" src="https://raw.githubusercontent.com/Azure/generator-jhipster-azure-spring-apps/main/jhipster-asa-logo.png">
     </a>
+    <h1>Jhipster Azure Spring Apps</h1>
+Some content
 </div>
 
 ---
