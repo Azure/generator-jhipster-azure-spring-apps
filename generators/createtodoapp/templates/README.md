@@ -18,9 +18,9 @@ The following prerequisites are required to use this application. Please ensure 
 - [Node.js with npm (16.13.1+)](https://nodejs.org/) - for the Web frontend
 
 ## How to deploy on Azure
-1. Log in to [azd]((https://aka.ms/azd-install)). Only required once per-install.
+1. Log in to [azd](https://aka.ms/azd-install). Only required once per-install.
 </br> `azd auth login`
-  * If you are on Windows, install [powershell](https://learn.microsoft.com/powershell/scripting/install/installing-powershell-on-windows)
+    * If you are on Windows, install [powershell](https://learn.microsoft.com/powershell/scripting/install/installing-powershell-on-windows)
 1. Enable Azure Spring Apps feature for AZD
 </br> `azd config set alpha.springapp on`
 1. Navigate to the generated project directory and run
