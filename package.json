@@ -43,7 +43,7 @@
     "eslint-plugin-import": "2.27.5",
     "eslint-plugin-prettier": "4.2.1",
     "esmocha": "1.0.1",
-    "prettier": "2.8.8",
+    "prettier": "3.0.0",
     "prettier-plugin-java": "",
     "prettier-plugin-packagejson": "",
     "yeoman-test": "8.0.0-rc.1"
