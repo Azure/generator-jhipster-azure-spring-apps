@@ -4,32 +4,15 @@
 # http://davidlaing.com/2012/09/19/customise-your-gitattributes-to-become-a-git-ninja/
 * text=auto
 
+# Force LF line endings for text files
+*.* text eol=lf
+
 # The above will handle all files NOT found below
 # These files are text and should be normalized (Convert crlf => lf)
 
 *.bat           text eol=crlf
 *.cmd           text eol=crlf
 *.ps1           text eol=crlf
-*.coffee        text
-*.css           text
-*.cql           text
-*.df            text
-*.ejs           text
-*.html          text
-*.java          text
-*.js            text
-*.json          text eol=lf
-*.less          text
-*.properties    text
-*.sass          text
-*.scss          text
-*.sh            text eol=lf
-*.sql           text
-*.txt           text
-*.ts            text
-*.xml           text
-*.yaml          text eol=lf
-*.yml           text eol=lf
 
 # Documents
 *.doc           diff=astextplain
@@ -42,29 +25,6 @@
 *.PDF           diff=astextplain
 *.rtf           diff=astextplain
 *.RTF           diff=astextplain
-*.markdown      text eol=lf
-*.md            text eol=lf
-*.adoc          text
-*.textile       text
-*.mustache      text
-*.csv           text
-*.tab           text
-*.tsv           text
-*.txt           text
-AUTHORS         text
-CHANGELOG       text
-CHANGES         text
-CONTRIBUTING    text
-COPYING         text
-copyright       text
-*COPYRIGHT*     text
-INSTALL         text
-license         text
-LICENSE         text
-NEWS            text
-readme          text
-*README*        text
-TODO            text
 
 # Graphics
 *.png           binary
@@ -85,28 +45,6 @@ TODO            text
 *.class         binary
 *.jar           binary
 *.war           binary
-
-## LINTERS
-.csslintrc      text
-.eslintrc       text
-.jscsrc         text
-.jshintrc       text
-.jshintignore   text
-.stylelintrc    text
-
-## CONFIGS
-*.conf          text
-*.config        text
-.editorconfig   text
-.gitattributes  text
-.gitconfig      text
-.gitignore      text
-.htaccess       text
-*.npmignore     text
-
-## HEROKU
-Procfile        text
-.slugignore     text
 
 ## AUDIO
 *.kar           binary
