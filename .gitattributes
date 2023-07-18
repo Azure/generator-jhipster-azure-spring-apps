@@ -18,7 +18,7 @@
 *.html          text
 *.java          text
 *.js            text
-*.json          text
+*.json          text eol=lf
 *.less          text
 *.properties    text
 *.sass          text
@@ -28,8 +28,8 @@
 *.txt           text
 *.ts            text
 *.xml           text
-*.yaml          text
-*.yml           text
+*.yaml          text eol=lf
+*.yml           text eol=lf
 
 # Documents
 *.doc           diff=astextplain
@@ -42,8 +42,8 @@
 *.PDF           diff=astextplain
 *.rtf           diff=astextplain
 *.RTF           diff=astextplain
-*.markdown      text
-*.md            text
+*.markdown      text eol=lf
+*.md            text eol=lf
 *.adoc          text
 *.textile       text
 *.mustache      text
