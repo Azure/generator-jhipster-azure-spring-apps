@@ -44,8 +44,8 @@
     "eslint-plugin-prettier": "5.0.0",
     "esmocha": "1.0.1",
     "prettier": "3.0.0",
-    "prettier-plugin-java": "",
-    "prettier-plugin-packagejson": "",
+    "prettier-plugin-java": "2.2.0",
+    "prettier-plugin-packagejson": "2.4.5",
     "yeoman-test": "8.0.0-rc.1"
   },
   "engines": {
