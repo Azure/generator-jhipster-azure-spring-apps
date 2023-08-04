@@ -35,13 +35,20 @@ The following prerequisites are required to use this application. Please ensure 
 
 Go to [Jhipster Online](https://start.jhipster.tech/generate-azure-application) and generate your application.
 
+## 🚁 How to run locally
+To run the project on the localhost:
+`mvn clean package -DskipTests`
+`java -jar web\\target\\azure-spring-apps-todo-web-0.0.1-SNAPSHOT.jar`
+
+You can also use Maven Wrapper with:
+`chmod +x mvnw`
+`./mvnw spring-boot:run`
+
 ## 🎉 How to deploy on Azure
 
 1. Log in to [azd](https://learn.microsoft.com/azure/developer/azure-developer-cli/install-azd). Only required once per-install.
    </br> `azd auth login`
    - If you are on Windows, install [powershell](https://learn.microsoft.com/powershell/scripting/install/installing-powershell-on-windows)
-1. Enable Azure Spring Apps feature for AZD
-   </br> `azd config set alpha.springapp on`
 1. Navigate to the generated project directory and run
    </br>`azd up`
 
