@@ -7,7 +7,7 @@ param psqlUserName string
 param psqlAdminPassword string
 @secure()
 param psqlUserPassword string
-param databaseName string = 'todo'
+param databaseName string
 param version string = '14'
 
 // Latest official version 2022-12-01 does not have Bicep types available

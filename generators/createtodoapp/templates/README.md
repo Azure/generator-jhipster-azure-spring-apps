@@ -13,16 +13,30 @@ Let's jump in and get this up and running in Azure. When you are finished, you w
 
 The following prerequisites are required to use this application. Please ensure that you have them all installed locally.
 
-- [Azure Developer CLI](https://aka.ms/azd-install)
+- [Azure Developer CLI 1.2.0 or later](https://aka.ms/azd-install)
 - [Java 17 or later](https://learn.microsoft.com/en-us/java/openjdk/install) - for API backend
 - [Node.js with npm (16.13.1+)](https://nodejs.org/) - for the Web frontend
+- [Docker](https://docs.docker.com/get-docker/)
+- [Powershell 7](https://learn.microsoft.com/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3) if you use windows
+
+If you are using Azure Developer CLI with the version lower than 1.2.0, then you will need to enable the feature for Azure Spring Apps support manually by the following command:
+```bash
+azd config set alpha.springapp on
+```
+
+## 🚁 How to run locally
+To run the project on the localhost:
+`mvn clean package -DskipTests`
+`java -jar web/target/azure-spring-apps-todo-web-0.0.1-SNAPSHOT.jar`
+
+You can also use Maven Wrapper with:
+`chmod +x mvnw`
+`./mvnw spring-boot:run`
 
 ## How to deploy on Azure
 1. Log in to [azd](https://aka.ms/azd-install). Only required once per-install.
 </br> `azd auth login`
     * If you are on Windows, install [powershell](https://learn.microsoft.com/powershell/scripting/install/installing-powershell-on-windows)
-1. Enable Azure Spring Apps feature for AZD
-</br> `azd config set alpha.springapp on`
 1. Navigate to the generated project directory and run
 </br>`azd up`
 
