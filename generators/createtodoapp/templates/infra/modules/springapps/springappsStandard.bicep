@@ -11,11 +11,11 @@ param datasourceUrl string
 resource asaInstance 'Microsoft.AppPlatform/Spring@2022-12-01' = {
   name: asaInstanceName
   location: location
-  tags: tags
+  tags: union(tags, { 'azd-service-name': appName })
   sku: {
-      name: 'B0'
-      tier: 'Basic'
-    }
+    name: 'S0'
+    tier: 'Standard'
+  }
 }
 
 resource asaApp 'Microsoft.AppPlatform/Spring/apps@2022-12-01' = {
@@ -24,7 +24,6 @@ resource asaApp 'Microsoft.AppPlatform/Spring/apps@2022-12-01' = {
   parent: asaInstance
   properties: {
     public: true
-    activeDeploymentName: 'default'
   }
 }
 

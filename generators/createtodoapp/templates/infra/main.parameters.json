@@ -8,14 +8,11 @@
     "location": {
       "value": "${AZURE_LOCATION}"
     },
-    "psqlAdminPassword": {
-      "value": "$(secretOrRandomPassword ${AZURE_KEY_VAULT_NAME} psqlAdminPassword)"
-    },
-    "psqlUserPassword": {
-      "value": "$(secretOrRandomPassword ${AZURE_KEY_VAULT_NAME} psqlUserPassword)"
-    },
     "relativePath": {
       "value": "${SERVICE_SIMPLE_TODO_WEB_RELATIVE_PATH=<default>}"
+    },
+    "plan": {
+      "value": "${PLAN=consumption}"
     }
   }
 }

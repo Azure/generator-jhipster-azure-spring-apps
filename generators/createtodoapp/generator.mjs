@@ -74,6 +74,7 @@ export default class extends BaseGenerator {
                   { file: 'azure.yaml', noEjs: true },
                   { file: '.gitattributes', noEjs: true },
                   { file: '.gitignore', noEjs: false },
+                  { file: 'Dockerfile', noEjs: false },
                   { file: 'CHANGELOG.md', noEjs: true },
                   { file: 'CONTRIBUTING.md', noEjs: true },
                   { file: 'LICENSE', noEjs: true },
@@ -83,11 +84,13 @@ export default class extends BaseGenerator {
                   { file: '.mvn/wrapper/maven-wrapper.jar', noEjs: true },
                   { file: '.mvn/wrapper/maven-wrapper.properties', noEjs: true },
                   { file: '.devcontainer/devcontainer.json', noEjs: true },
-                  { file: '.devcontainer/Dockerfile', noEjs: true },
                   { file: '.github/CODE_OF_CONDUCT.md', noEjs: true },
                   { file: '.github/ISSUE_TEMPLATE.md', noEjs: true },
                   { file: '.github/PULL_REQUEST_TEMPLATE.md', noEjs: true },
                   { file: '.github/workflows/build-with-maven.yml', noEjs: true },
+                  { file: '.github/workflows/azure-dev.yml', noEjs: true },
+                  { file: '.github/workflows/create-release.yml', noEjs: true },
+                  { file: '.github/workflows/docker-image.yml', noEjs: true },
                   { file: 'assets/web.png', noEjs: true },
                   { file: 'web/README.md', noEjs: true },
                 ],
@@ -175,7 +178,7 @@ ${chalk.greenBright('The TODO template has been created successfully! 🎉')}
 
 ${chalk.magentaBright(`Run locally:`)}
 ${chalk.cyan(`    mvn clean package -DskipTests`)}
-${chalk.cyan(`    java -jar web\\target\\azure-spring-apps-todo-web-0.0.1-SNAPSHOT.jar`)}
+${chalk.cyan(`    java -jar web/target/azure-spring-apps-todo-web-0.0.1-SNAPSHOT.jar`)}
 
 ${chalk.magentaBright(`Deploy on Azure Spring Apps with monthly free grants:`)}
 ${chalk.cyan(`    https://aka.ms/asa/webapp-quickstart`)}

@@ -13,8 +13,6 @@ export default class extends AppGenerator {
         `This is a JHipster blueprint and should be used only like ${chalk.yellow('jhipster --blueprints azure-spring-apps')}`
       );
     }
-
-    this.sbsBlueprint = true;
   }
 
   get [AppGenerator.COMPOSING]() {
