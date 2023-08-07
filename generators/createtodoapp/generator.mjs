@@ -74,7 +74,7 @@ export default class extends BaseGenerator {
                   { file: 'azure.yaml', noEjs: true },
                   { file: '.gitattributes', noEjs: true },
                   { file: '.gitignore', noEjs: false },
-                  { file: 'Dockerfile', noEjs: false },
+                  { file: 'Dockerfile', noEjs: true },
                   { file: 'CHANGELOG.md', noEjs: true },
                   { file: 'CONTRIBUTING.md', noEjs: true },
                   { file: 'LICENSE', noEjs: true },

@@ -2,9 +2,6 @@
 
 exports[`SubGenerator createtodoapp of azure-spring-apps JHipster blueprint run should succeed 1`] = `
 {
-  ".devcontainer/Dockerfile": {
-    "stateCleared": "modified",
-  },
   ".devcontainer/devcontainer.json": {
     "stateCleared": "modified",
   },
@@ -20,7 +17,16 @@ exports[`SubGenerator createtodoapp of azure-spring-apps JHipster blueprint run 
   ".github/PULL_REQUEST_TEMPLATE.md": {
     "stateCleared": "modified",
   },
+  ".github/workflows/azure-dev.yml": {
+    "stateCleared": "modified",
+  },
   ".github/workflows/build-with-maven.yml": {
+    "stateCleared": "modified",
+  },
+  ".github/workflows/create-release.yml": {
+    "stateCleared": "modified",
+  },
+  ".github/workflows/docker-image.yml": {
     "stateCleared": "modified",
   },
   ".gitignore": {
@@ -39,6 +45,9 @@ exports[`SubGenerator createtodoapp of azure-spring-apps JHipster blueprint run 
     "stateCleared": "modified",
   },
   "CONTRIBUTING.md": {
+    "stateCleared": "modified",
+  },
+  "Dockerfile": {
     "stateCleared": "modified",
   },
   "LICENSE": {
@@ -224,7 +233,10 @@ exports[`SubGenerator createtodoapp of azure-spring-apps JHipster blueprint run 
   "infra/modules/postgresql/flexibleserver.bicep": {
     "stateCleared": "modified",
   },
-  "infra/modules/springapps/springapps.bicep": {
+  "infra/modules/springapps/springappsConsumption.bicep": {
+    "stateCleared": "modified",
+  },
+  "infra/modules/springapps/springappsStandard.bicep": {
     "stateCleared": "modified",
   },
   "mvnw": {
