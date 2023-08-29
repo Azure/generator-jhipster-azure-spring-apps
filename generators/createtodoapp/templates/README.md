@@ -31,7 +31,7 @@ To run the project on the localhost:
 
 You can also use Maven Wrapper with:
 `chmod +x mvnw`
-`./mvnw spring-boot:run`
+`./mvnw spring-boot:run -f web/pom.xml`
 
 ## How to deploy on Azure
 1. Log in to [azd](https://aka.ms/azd-install). Only required once per-install.
