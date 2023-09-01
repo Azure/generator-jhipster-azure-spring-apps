@@ -26,12 +26,12 @@ azd config set alpha.springapp on
 
 ## 🚁 How to run locally
 To run the project on the localhost:
-`mvn clean package -DskipTests`
-`java -jar web/target/azure-spring-apps-todo-web-0.0.1-SNAPSHOT.jar`
+- `mvn clean package -DskipTests`
+- `java -jar web/target/${artifact-name}-web-0.0.1-SNAPSHOT.jar`
 
 You can also use Maven Wrapper with:
-`chmod +x mvnw`
-`./mvnw spring-boot:run -f web/pom.xml`
+- `chmod +x mvnw`
+- `./mvnw spring-boot:run -f web/pom.xml`
 
 ## How to deploy on Azure
 1. Log in to [azd](https://aka.ms/azd-install). Only required once per-install.
