@@ -37,12 +37,12 @@ Go to [Jhipster Online](https://start.jhipster.tech/generate-azure-application) 
 
 ## 🚁 How to run locally
 To run the project on the localhost:
-`mvn clean package -DskipTests`
-`java -jar web/target/azure-spring-apps-todo-web-0.0.1-SNAPSHOT.jar`
+- `mvn clean package -DskipTests`
+- `java -jar web/target/jhipster-sample-application-web-0.0.1-SNAPSHOT.jar`
 
 You can also use Maven Wrapper with:
-`chmod +x mvnw`
-`./mvnw spring-boot:run`
+- `chmod +x mvnw`
+- `./mvnw spring-boot:run`
 
 ## 🎉 How to deploy on Azure
 
