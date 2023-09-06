@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import chalk from 'chalk';
 import BaseGenerator from 'generator-jhipster/generators/base';
 
@@ -40,15 +41,10 @@ export default class extends BaseGenerator {
 
         const props = await this.prompt(prompts, this.config);
 
-        // Make sure all derived properties are loaded
-        this.loadAppConfig(props);
-        this.loadDerivedAppConfig(props);
-        this.loadServerConfig(props);
-        this.loadDerivedServerConfig(props);
-        this.loadClientConfig(props);
-        this.loadDerivedClientConfig(props);
-        this.loadPlatformConfig(props);
-        // this.loadTranslationConfig(props);
+        const baseName = this.jhipsterConfigWithDefaults.baseName;
+        props.humanizedBaseName = baseName.toLowerCase() === 'jhipster' ? 'JHipster' : _.startCase(baseName);
+        props.dasherizedBaseName = _.kebabCase(baseName);
+        props.packageFolder = this.jhipsterConfigWithDefaults.packageFolder;
 
         this.todoAppProps = props;
       },
