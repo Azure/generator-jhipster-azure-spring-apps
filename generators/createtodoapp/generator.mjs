@@ -169,12 +169,13 @@ export default class extends BaseGenerator {
     return {
       ...super.end,
       afterRunHook() {
+        const artifactName = this.todoAppProps.dasherizedBaseName + '-web';
         this.log(`
 ${chalk.greenBright('The TODO template has been created successfully! 🎉')}
 
 ${chalk.magentaBright(`Run locally:`)}
 ${chalk.cyan(`    mvn clean package -DskipTests`)}
-${chalk.cyan(`    java -jar web/target/azure-spring-apps-todo-web-0.0.1-SNAPSHOT.jar`)}
+${chalk.cyan(`    java -jar web/target/${artifactName}-0.0.1-SNAPSHOT.jar`)}
 
 ${chalk.magentaBright(`Deploy on Azure Spring Apps with monthly free grants:`)}
 ${chalk.cyan(`    https://aka.ms/asa/webapp-quickstart`)}
