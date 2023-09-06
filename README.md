@@ -36,11 +36,14 @@ The following prerequisites are required to use this application. Please ensure 
 Go to [Jhipster Online](https://start.jhipster.tech/generate-azure-application) and generate your application.
 
 ## 🚁 How to run locally
+
 To run the project on the localhost:
+
 - `mvn clean package -DskipTests`
 - `java -jar web/target/${artifact-name}-web-0.0.1-SNAPSHOT.jar`
 
 You can also use Maven Wrapper with:
+
 - `chmod +x mvnw`
 - `./mvnw spring-boot:run -f web/pom.xml`
 
