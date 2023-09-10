@@ -19,15 +19,16 @@ Documentation about Azure Spring Apps is available [here](https://learn.microsof
 
 The following prerequisites are required to use this application. Please ensure that you have them all installed locally.
 
-- [Azure Developer CLI](https://aka.ms/azd-install)
+- [Azure Developer CLI 1.3.0 or later](https://aka.ms/azd-install)
 - [Java 17 or later](https://learn.microsoft.com/en-us/java/openjdk/install) - for API backend
 - [Node.js with npm (16.13.1+)](https://nodejs.org/) - for the Web frontend
+- [Maven](https://maven.apache.org/download.cgi) - for local build
 
 ## 🚀 How to generate a project
 
 ### CLI
 
-1. Install the package with `npm i generator-jhipster-azure-spring-apps`
+1. Install the package with `npm install -g generator-jhipster-azure-spring-apps`
 1. Create and navigate to a directory
 1. Generate the application with `jhipster-azure-spring-apps createtodoapp`
 
