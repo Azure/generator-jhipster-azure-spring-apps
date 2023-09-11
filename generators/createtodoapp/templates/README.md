@@ -13,12 +13,15 @@ Let's jump in and get this up and running in Azure. When you are finished, you w
 
 The following prerequisites are required to use this application. Please ensure that you have them all installed locally.
 
-- [Azure Developer CLI 1.3.0 or later](https://aka.ms/azd-install)
 - [Java 17 or later](https://learn.microsoft.com/en-us/java/openjdk/install) - for API backend
 - [Node.js with npm (16.13.1+)](https://nodejs.org/) - for the Web frontend
 - [Maven](https://maven.apache.org/download.cgi) - for local build
-- [Docker](https://docs.docker.com/get-docker/)
 - [Powershell 7](https://learn.microsoft.com/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3) if you use windows
+- Azure Subscription:
+  - [Try Azure for free](https://azure.microsoft.com/en-us/products/spring-apps/#overview), you can start with $200 Azure credit.
+  - To help you get started, Azure Spring Apps have [monthly FREE grants](https://techcommunity.microsoft.com/t5/apps-on-azure-blog/price-reduction-azure-spring-apps-does-more-costs-less/ba-p/3614058) on all plans – 50 vCPU Hours and 100 memory GB Hours per plan.
+- [Azure Developer CLI 1.3.0 or later](https://aka.ms/azd-install)
+- [Docker](https://docs.docker.com/get-docker/) - optional
 
 ## 🚁 How to run locally
 To run the project on the localhost:
@@ -27,6 +30,7 @@ To run the project on the localhost:
 
 You can also use Maven Wrapper with:
 - `chmod +x mvnw`
+- `mvnw clean package -DskipTests`
 - `./mvnw spring-boot:run -f web/pom.xml`
 
 ## How to deploy on Azure
