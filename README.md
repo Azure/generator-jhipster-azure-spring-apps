@@ -2,7 +2,7 @@
     <a href="https://start.jhipster.tech/generate-azure-application">
         <img width="380" height="160" src="https://raw.githubusercontent.com/Azure/generator-jhipster-azure-spring-apps/main/jhipster-asa-logo.png">
     </a>
-    <h1>Jhipster Azure Spring Apps</h1>
+    <h1>JHipster Azure Spring Apps</h1>
 </div>
 
 ---
@@ -37,7 +37,7 @@ The following prerequisites are required to use this application. Please ensure 
 
 ### JHipster Online
 
-Go to [Jhipster Online](https://start.jhipster.tech/generate-azure-application) and generate your application.
+Go to [JHipster Online](https://start.jhipster.tech/generate-azure-application) and generate your application.
 
 ## 🚁 How to run locally
 
