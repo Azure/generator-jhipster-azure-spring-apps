@@ -52,6 +52,9 @@ You can also use Maven Wrapper with:
 - `mvnw clean package -DskipTests`
 - `./mvnw spring-boot:run -f web/pom.xml`
 
+To test the local project, access port 8080 (by default) or the one that you specified:
+- `http://localhost:8080/`
+
 ## 🎉 How to deploy on Azure
 
 1. Log in to [azd](https://learn.microsoft.com/azure/developer/azure-developer-cli/install-azd). Only required once per-install.
