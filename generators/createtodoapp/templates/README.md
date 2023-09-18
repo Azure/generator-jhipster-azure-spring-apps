@@ -46,10 +46,9 @@ To test the local project, access port 8080 (by default) or the one that you spe
   After the command is executed, you can see the following log signs that the deployment was successful.
 
   ```text
-  [INFO] Deployment(default) is successfully updated.
-  [INFO] Deployment Status: Running
-  [INFO] Getting public url of app(simple-todo-web)...
-  [INFO] Application url: https://<your-azure-spring-apps-name>-simple-todo-web.azuremicroservices.io
+  SUCCESS: Your application was provisioned and deployed to Azure Spring Apps in <deployment-time>.
+  You can view the resources created under the resource group <your-resource-group> in Azure Portal:
+  https://portal.azure.come/#@/resource/subscriptions/<subscription-id>/resourceGroups/<your-resource-group>/overview
 ```
 
 The output **Application url** is the endpoint to access the todo application.
