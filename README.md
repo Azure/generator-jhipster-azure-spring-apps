@@ -25,7 +25,7 @@ The following prerequisites are required to use this application. Please ensure 
 - Azure Subscription:
   - [Try Azure for free](https://azure.microsoft.com/en-us/products/spring-apps/#overview), you can start with $200 Azure credit.
   - To help you get started, Azure Spring Apps have [monthly FREE grants](https://techcommunity.microsoft.com/t5/apps-on-azure-blog/price-reduction-azure-spring-apps-does-more-costs-less/ba-p/3614058) on all plans – 50 vCPU Hours and 100 memory GB Hours per plan.
-- [Azure Developer CLI 1.3.0 or later](https://aka.ms/azd-install)
+- [Azure Developer CLI 1.2.0 or later](https://aka.ms/azd-install)
 
 ## 🚀 How to generate a project
 
