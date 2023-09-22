@@ -20,7 +20,7 @@ The following prerequisites are required to use this application. Please ensure 
 - Azure Subscription:
   - [Try Azure for free](https://azure.microsoft.com/en-us/products/spring-apps/#overview), you can start with $200 Azure credit.
   - To help you get started, Azure Spring Apps have [monthly FREE grants](https://techcommunity.microsoft.com/t5/apps-on-azure-blog/price-reduction-azure-spring-apps-does-more-costs-less/ba-p/3614058) on all plans – 50 vCPU Hours and 100 memory GB Hours per plan.
-- [Azure Developer CLI 1.3.0 or later](https://aka.ms/azd-install)
+- [Azure Developer CLI 1.2.0 or later](https://aka.ms/azd-install)
 - [Docker](https://docs.docker.com/get-docker/) - optional
 
 ## 🚁 How to run locally
@@ -46,10 +46,9 @@ To test the local project, access port 8080 (by default) or the one that you spe
   After the command is executed, you can see the following log signs that the deployment was successful.
 
   ```text
-  [INFO] Deployment(default) is successfully updated.
-  [INFO] Deployment Status: Running
-  [INFO] Getting public url of app(simple-todo-web)...
-  [INFO] Application url: https://<your-azure-spring-apps-name>-simple-todo-web.azuremicroservices.io
+  SUCCESS: Your application was provisioned and deployed to Azure Spring Apps in <deployment-time>.
+  You can view the resources created under the resource group <your-resource-group> in Azure Portal:
+  https://portal.azure.come/#@/resource/subscriptions/<subscription-id>/resourceGroups/<your-resource-group>/overview
 ```
 
 The output **Application url** is the endpoint to access the todo application.
