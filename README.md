@@ -53,6 +53,7 @@ You can also use Maven Wrapper with:
 - `./mvnw spring-boot:run -f web/pom.xml`
 
 To test the local project, access port 8080 (by default) or the one that you specified:
+
 - `http://localhost:8080/`
 
 ## 🎉 How to deploy on Azure
