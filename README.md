@@ -14,7 +14,7 @@ JHipster Azure Spring Apps can quickly create applications that can be deployed 
 Documentation about Azure Spring Apps is available [here](https://learn.microsoft.com/en-us/azure/spring-apps/overview).
 
 Watch this video tutorial:
-[![JHipster Azure Spring Apps](https://img.youtube.com/vi/4BlGvoz22-U/maxresdefault.jpg)](https://www.youtube.com/watch?v=AmxPv_5Bs_k&t=33s)
+[![JHipster Azure Spring Apps](https://img.youtube.com/vi/AmxPv_5Bs_k/maxresdefault.jpg)](https://www.youtube.com/watch?v=AmxPv_5Bs_k&t=33s)
 
 ---
 
